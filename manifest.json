@@ -1,0 +1,17 @@
+{
+  "name": "plsdeletemyhistory",
+  "version": "1.0",
+  "description": "pls delete my history",
+  "permissions": [
+    "browsingData"
+  ],
+  "options_ui": {
+    "page": "popup.html",
+    "open_in_tab": false
+  },
+  "browser_action": {
+    "default_title": "plsdeletemyhistory",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
