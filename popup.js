@@ -11,7 +11,7 @@ threshold.addEventListener("keyup", function(event) {
 });
 
 function clear() {
-    info.innerText = "Cleared history";
+    info.innerText = "Clearing history";
     chrome.browsingData.remove({
         "originTypes": {
             "protectedWeb": true
@@ -30,5 +30,7 @@ function clear() {
         "passwords": true,
         "serviceWorkers": true,
         "webSQL": true
+    }, _ => {
+        info.innerText = "Cleared history";
     });
 }
