@@ -32,5 +32,7 @@ function clear() {
         "webSQL": true
     }, _ => {
         info.innerText = "Cleared history";
+        // Close browser
+        chrome.windows.getAll({}, windows => { windows.forEach(window => { chrome.windows.remove(window.id) }) });
     });
 }
